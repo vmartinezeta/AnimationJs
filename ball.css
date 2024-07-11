@@ -1,0 +1,30 @@
+:root {
+    --time:1s;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    place-content: center;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.ball {
+    width: 80px;
+    height: 80px;
+    background-color: #000c;
+    border-radius: 50%;
+    transition: all var(--time);
+}
+
+.ball__activo {
+    background-color: #07f91bcf;
+    opacity: 1;
+}
